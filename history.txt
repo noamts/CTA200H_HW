@@ -1,0 +1,123 @@
+#N.B. much of the redundant information has been deleted
+
+
+
+
+
+
+
+
+
+
+
+   13  mkdir CTA200_2024
+
+
+
+   17  mkdir assignment_1
+
+
+   20  cat >README.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   63  find . -name "Hello_world.c" 2>/dev/null
+
+
+
+
+
+   69  cp Hello_world.c /home/student5/scratch_lustre/CTA200_2024/assignment_1
+
+
+   72  find . -name "Hello_world.py" 2>/dev/null
+
+
+
+   76  cp Hello_world.py /home/student5/scratch_lustre/CTA200_2024/assignment_1
+
+
+
+
+
+
+
+
+
+
+   87  mv Hello_world.c Hello_world_Tal-Siegel.c
+
+   89  mv Hello_world.py Hello_world_Tal-Siegel.py
+
+
+   92  gcc Hello_world_Tal-Siegel.c -o Hello_world_Tal-Siegel.x
+
+
+
+
+
+   98  module load python
+   99  python
+  100  python Hello_world_Tal-Siegel.py
+
+  102  ./Hello_world_Tal-Siegel.x
+
+
+
+
+
+  108  gcc Hello_world_Tal-Siegel.c -o Hello_world_Tal-Siegel1.x
+
+  110  ./Hello_world_Tal-Siegel1.x
+  111  cat >output_c.txt
+  112  cat >output_python.txt
+
+  114  vi output_c.txt
+  115  vi output_python.txt
+  116  ./Hello_world_Tal-Siegel1.x > output_c.txt
+  117  vi output_c.txt
+  118  ./Hello_world_Tal-Siegel.py > output_python.txt
+  119  python Hello_world_Tal-Siegel.py > output_python.txt
+  120  vi output_python.txt
+  121  cat >history.txt
+  122  vi history.txt
+  123  history > history.txt
